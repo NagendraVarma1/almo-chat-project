@@ -6,7 +6,6 @@ function App() {
   const [fileName, setFileName] = useState("");
   const [fileContent, setFileContent] = useState("");
   const [filePreview, setFilePreview] = useState("");
-  const [text, setText] = useState('')
 
   const fileChangeHandler = (event) => {
     const file = event.target.files[0];
@@ -41,7 +40,6 @@ function App() {
       setFilePreview('')
     }
   }
-  console.log(text)
   return (
     <div className="App">
       <h1>File Upload and Preview</h1>
